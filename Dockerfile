@@ -17,6 +17,7 @@ RUN cd /tmp && \
 	go get github.com/bitly/oauth2_proxy/cookie && \
 	go get github.com/bitly/oauth2_proxy/providers && \
 	go get github.com/gorilla/websocket && \
+	go get cloud.google.com/go/compute/metadata && \
 	go build && \
 	mv oauth2_proxy-2.1.1 /bin/oauth2_proxy && \
 	chmod +x /bin/oauth2_proxy && \
